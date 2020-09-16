@@ -1,0 +1,402 @@
+#HdNav{
+    position: fixed;
+    bottom: 0px;
+    height: 100%;
+    z-index: 1;
+    width: 0%;
+    background-color: rgba(0,0,0,0.3);
+    visibility: hidden;
+}
+
+.NvBrCnt{
+    visibility: visible;
+    clear: both;
+    padding: 0;
+    color:white;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top:0px;
+    z-index: 2;
+}
+
+.NvBr{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0);
+}
+.NvBrRt{
+    float: right;
+    visibility: inherit;
+}
+.NvBrLt{
+    float: left;
+    visibility: inherit;
+}
+#NvHd{
+    visibility: hidden;
+    width: 0px;
+}
+.NvBr li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.NvBr li a:hover:not(#active){
+    background-color: #4CAF50;
+    outline-width: 2px;
+    outline-style: outset;
+    outline-color: #4CAF50;
+    position: relative;
+    right: 5px;
+}
+.NvBr li #active{
+    background-color: #4C50BF;
+}
+.NvBr li #active:hover{
+    background-color: #4C70EF;
+}
+
+@media only screen and (max-width: 600px){
+    #HdNav{
+        width: 100%;
+    }
+    .NvBrCnt{
+        visibility: hidden; 
+        background-color: rgba(0,0,0,0.7);
+    }
+    .NvBrRt{
+        width: 100%;
+        visibility: inherit;
+        border-top: 1px solid rgba(200,200,200,0.5);
+    }
+    .NvBrLt{
+        background-color: rgba(0,0,0,0.3);
+    }
+    #HmBtn{
+        position: fixed;
+        top: 1px;
+        left: 0px;
+        visibility: visible;
+        width: 30%;
+        clear: both;
+    }
+    #NvHd{  
+        visibility: visible;
+        width: 70%;
+        text-align: right;
+        padding: auto;
+        background-color: rgba(0,0,0,0.9);
+    }
+    .NvBr li a:hover:not(#active){
+        background-color: #4CAF50;
+        position: relative;
+        top: -5px;
+    }
+    #NvHd span{
+        padding: 18px 20px;
+    }
+
+    #NvHd span:hover{
+        background-color: rgba(0,255,0,0.5);
+    }
+}
+
+.ftr{
+    clear: both;
+    position: fixed;
+    bottom: 0px;
+    padding: 15px;
+    color:#9d9d9d;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.9);
+}
+#pageName{
+    margin-top: 60px;
+    font-size: 50px;
+}
+
+#bgimg{
+    position: fixed;
+    top:0px;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-size: cover;  
+     
+}
+#err{
+    visibility: hidden;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50,50,50,0.8);
+}
+#errbox{
+    background-color: rgb(255,0,0);
+    border-color: red;
+    visibility: inherit;
+    font-size: 20px;
+    color: white;
+    width: 70%;
+    max-width: 600px;
+    padding: 50px;
+    border-radius: 2px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#errbox:hover{
+    background-color: green;
+}
+
+#formselect{
+    border-color: rgb(200,200,200);
+}
+#mainTab{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#leftImage{
+    background-color: rgba(0,0,0,0.5);
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+    float: left;
+    height: inherit;
+    position: relative;
+    min-height: 400px;
+}
+#leftImage:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+#clglogo{
+    width: 80%;
+    max-width: inherit;
+    max-height: inherit;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+body{
+    min-width: 480;
+}
+
+.rightOptions{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 5px;
+    width: 46%;
+    float: right;
+    height: inherit;
+    border: 50px solid rgba(0,0,0,0);
+}
+.rightOptions:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+.rightOptions h1{
+    color: white;
+    margin-bottom: 25px;
+}
+@media only screen and (max-width: 600px){
+    #leftImage{
+        width: 96%;
+        margin-right: : 2%;
+        margin-left: 2%;
+        height: auto;
+        background-color: rgba(0,0,0,0);
+    }
+    #leftImage:hover{
+        background-color: rgba(0,0,0,0);
+    }
+    .rightOptions{
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+        margin: 0px;
+        background-color: rgba(0,0,0,0.7);
+    }
+    .rightOptions:hover{
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+
+.loginpanel{
+    padding: 10px;
+    max-width: 500px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 2px solid red;
+}
+.form-group{
+    text-align: center;
+    padding: auto;
+    color: white;
+    width: 80%;
+    max-width: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.submit{
+    width: 60%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+body{
+    background-color: white;
+    min-width: 360px;
+    overflow-x: scroll;
+}
+
+.container{
+    clear: both;
+    padding: 15px;
+    color:#9d9d9d;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    background-color: #0d0d0d;
+}
+
+.boxAbout{
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-size: 18px;
+    padding: 5%;
+    width: 70%;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+}
+@media only screen and (max-width: 600px){
+    .boxAbout{
+        width: 95%;
+    }
+}
+
+#banner_content{
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 450px;
+}
+
+.contactUsTable{
+    margin-bottom: 12%;
+    width: 80%;
+    max-width: 900px;
+}
+.UsTable tr{
+    border-bottom:2px solid rgba(50,50,50,0.5);
+}
+.UsTable tr:nth-child(odd) {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 15px;
+}
+
+.UsTable tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.6);
+    color: black;
+    font-size: 15px;
+}
+
+.UsTable tr:hover {
+    background-color: rgba(0,150,0,0.6);
+    font-weight: bold;
+}
+
+.UsTable td,th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50%;
+}
+.UsTable caption{
+    color: white;
+}
+.UsTable{
+    width: 100%;
+}
+
+@media only screen and (max-width: 650px){
+    .contactUsTable{
+        width: 95%;
+    }
+}
+
+#btnbtn{
+    margin: 40px 40px;
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    width: 80%;
+    background-color: rgba(0,0,255,0.8);
+}
+
+#btnbtn:hover{
+    background-color: rgba(0,0,255,0.9);
+}
+
+
+/*for step4*/
+
+.uploadbox{
+    margin: 20px;
+    padding: 20px 10%;
+    border-radius: 5px;
+    color: white;
+    /*color: white;*/
+    background-color: rgba(100,100,100,0.6);
+    text-align: center;
+}
+
+.size{
+    color: rgba(0,0,0,0);
+}
+
+.uploadbox:hover{
+    background-color: rgba(100,100,100,0.4);
+}
+
+.uploadbox input{
+    color: black;
+    width: 100%;
+    margin: 10px;
+}
+
+.data-table{
+	
+	background-color: rgba(0, 0, 255, 0.3); 
+	float:left; 
+	width:100%;
+	padding: 5px;
+	height: 100%;
+}
